@@ -1,0 +1,19 @@
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+<!-- Base application theme. -->
+    <style name="Base.Theme.TeoriMobile10_AldrianiSaputra_056" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">#C599B6</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#C599B6</item>
+        <item name="android:statusBarColor">#E6B2BA</item>
+        <item name="android:windowBackground">#FAF8FF</item>
+        <item name="android:fontFamily">@font/poppins</item>
+
+
+    <!-- Warna action bar / navbar -->
+    <item name="android:colorPrimary">#C599B6</item> <!-- Navbar warna utama -->
+    <item name="android:colorPrimaryDark">#A56C89</item> <!-- Warna dark navbar saat dipakai -->
+
+    </style>
+<style name="Theme.TeoriMobile10_AldrianiSaputra_056" parent="Base.Theme.TeoriMobile10_AldrianiSaputra_056" />
+</resources>
