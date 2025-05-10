@@ -1,10 +1,13 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="heroes_name">Nama Pahlawan</string>
-    <string name="detail">Detail</string>
+    <string name="heroes_name">Nama Novel</string>
+    <string name="detail">Detail Novel</string>
     <string name="book_cover">Book Cover</string>
     <string name="favorite">Favorite</string>
     <string name="share">Share</string>
     <string name="read">Read</string>
+    <string name="genre">Genre</string>
+    <string name="author">Author</string>
+    <string name="year">Year</string>
 
 </resources>

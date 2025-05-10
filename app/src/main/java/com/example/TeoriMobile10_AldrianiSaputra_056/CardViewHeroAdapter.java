@@ -40,28 +40,35 @@ public class CardViewHeroAdapter extends RecyclerView.Adapter<CardViewHeroAdapte
                 .into(holder.imgPhoto);
 
         holder.tvName.setText(hero.getName());
+        holder.tvAuthor.setText("Author : " + hero.getAuthor());
+        holder.tvGenre.setText("Genre : " + hero.getGenre());
+        holder.tvYear.setText("Year : " + hero.getYear());
         holder.tvDetail.setText(hero.getDetail());
 
         holder.btnFavorite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(holder.itemView.getContext(), "Favorite " +
-                        listHero.get(holder.getAdapterPosition()).getName(), Toast.LENGTH_SHORT).show();
+                String message = "Buku " + listHero.get(holder.getAdapterPosition()).getName() +
+                        " telah dimasukkan ke dalam pustaka Favorite";
+                Toast.makeText(holder.itemView.getContext(), message, Toast.LENGTH_SHORT).show();
             }
         });
 
         holder.btnShare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(holder.itemView.getContext(), "Share " +
-                        listHero.get(holder.getAdapterPosition()).getName(), Toast.LENGTH_SHORT).show();
+                String message = "Buku " + listHero.get(holder.getAdapterPosition()).getName() +
+                        " Berhasil dishare";
+                Toast.makeText(holder.itemView.getContext(), message, Toast.LENGTH_SHORT).show();
             }
         });
+
         holder.btnRead.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(holder.itemView.getContext(), "Read " +
-                        listHero.get(holder.getAdapterPosition()).getName(), Toast.LENGTH_SHORT).show();
+                String message = "Buku " + listHero.get(holder.getAdapterPosition()).getName() +
+                        " telah dimasukkan ke dalam pustaka Reading";
+                Toast.makeText(holder.itemView.getContext(), message, Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -71,20 +78,23 @@ public class CardViewHeroAdapter extends RecyclerView.Adapter<CardViewHeroAdapte
         return listHero.size();
     }
 
+    // ViewHolder should be defined once, not nested inside itself
     class CardViewViewHolder extends RecyclerView.ViewHolder {
         ImageView imgPhoto;
-        TextView tvName, tvDetail;
+        TextView tvName, tvDetail, tvAuthor, tvGenre, tvYear;
         Button btnFavorite, btnShare, btnRead;
 
         CardViewViewHolder(View itemView) {
             super(itemView);
             imgPhoto = itemView.findViewById(R.id.img_item_photo);
             tvName = itemView.findViewById(R.id.tv_item_name);
-            tvDetail = itemView.findViewById(R.id.tv_item_detail);
+            tvAuthor = itemView.findViewById(R.id.tv_item_author); // Corrected here
+            tvGenre = itemView.findViewById(R.id.tv_item_genre); // Corrected here
+            tvYear = itemView.findViewById(R.id.tv_item_year); // Corrected here
             btnFavorite = itemView.findViewById(R.id.btn_set_favorite);
             btnShare = itemView.findViewById(R.id.btn_set_share);
             btnRead = itemView.findViewById(R.id.btn_read);
-
+            tvDetail = itemView.findViewById(R.id.tv_item_detail);
         }
     }
 }

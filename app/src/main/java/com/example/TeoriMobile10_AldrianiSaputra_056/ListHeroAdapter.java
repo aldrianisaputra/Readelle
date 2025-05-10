@@ -13,7 +13,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.example.TeoriMobile10_AldrianiSaputra_056.R;
 
 import java.util.ArrayList;
 
@@ -41,10 +40,11 @@ public class ListHeroAdapter extends RecyclerView.Adapter<ListHeroAdapter.ListVi
                 .into(holder.imgPhoto);
         holder.tvName.setText(hero.getName());
         holder.tvDetail.setText(hero.getDetail());
+        holder.tvAuthor.setText("Author : " + hero.getAuthor());
 
-        // Set the custom font for the name TextView
+        // Set custom font for name TextView
         Typeface typeface = ResourcesCompat.getFont(holder.itemView.getContext(), R.font.poppins_bold);
-        holder.tvName.setTypeface(typeface); // Apply the bold font
+        holder.tvName.setTypeface(typeface);
     }
 
     @Override
@@ -54,13 +54,14 @@ public class ListHeroAdapter extends RecyclerView.Adapter<ListHeroAdapter.ListVi
 
     class ListViewHolder extends RecyclerView.ViewHolder {
         ImageView imgPhoto;
-        TextView tvName, tvDetail;
+        TextView tvName, tvDetail, tvAuthor;
 
         ListViewHolder(View itemView) {
             super(itemView);
             imgPhoto = itemView.findViewById(R.id.img_item_photo);
             tvName = itemView.findViewById(R.id.tv_item_name);
             tvDetail = itemView.findViewById(R.id.tv_item_detail);
+            tvAuthor = itemView.findViewById(R.id.tv_item_author);
         }
     }
 }
