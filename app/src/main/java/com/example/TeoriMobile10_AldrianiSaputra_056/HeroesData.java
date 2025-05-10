@@ -13,7 +13,13 @@ public class HeroesData {
             "The Museum of the LOST & FOUND - Leila Sales",
             "Bulan - Tere Liye",
             "Bumi - Tere Liye",
-            "Komet Minor - Tere Liye"
+            "Komet Minor - Tere Liye",
+            "The Rose Bargain - Shasa Peyton Smith",
+            "A Dark and Drowning Tide - Allison Saft",
+            "How to Kill a King - Stephanie Seed",
+            "Alice in Neverland - Jeni Conrad",
+            "Pater Pan in Wonderland - Jeni Conrad"
+
     };
 
 
@@ -25,11 +31,13 @@ public class HeroesData {
             "Vanessa, gadis kecil berusia 11 tahun, mendirikan sebuah 'museum' rahasia dari benda-benda yang ditinggalkan sahabatnya yang hilang. Setiap benda menjadi pengingat akan kenangan dan petunjuk untuk memahami perasaan kehilangan. Dalam perjalanannya, Vanessa belajar bahwa kehilangan tidak selalu berarti akhir, melainkan awal dari pemahaman yang lebih dalam tentang harapan, keberanian, dan cinta yang tak pernah benar-benar hilang.",
             "Dalam lanjutan kisah Raib, Seli, dan Ali, mereka menjelajah dunia Klan Matahari yang jauh lebih panas dan keras dari dunia sebelumnya. Misi mereka adalah menemukan kunci untuk menghentikan ancaman yang dapat menghancurkan semua klan. Di tengah konflik politik, kejahatan tersembunyi, dan tantangan yang semakin berat, ketiganya belajar tentang kepercayaan, pengorbanan, dan arti persahabatan sejati.",
             "Raib, gadis SMA yang memiliki kekuatan menghilang, menemukan dirinya berasal dari dunia paralel bernama Klan Bulan. Bersama dua sahabatnya, Seli dan Ali, ia memulai perjalanan penuh bahaya melintasi berbagai dunia dengan misi untuk melindungi keseimbangan antara klan. Perjalanan ini membuka rahasia keluarganya dan membuat Raib sadar bahwa takdirnya jauh lebih besar dari yang pernah ia bayangkan.",
-            "Komet Minor adalah pertanda kehancuran bagi dunia Klan. Raib, Seli, dan Ali kini menghadapi ujian terakhir dalam petualangan epik mereka. Dalam peperangan terbesar antar dunia, mereka harus menggunakan semua kekuatan, pengetahuan, dan keberanian yang telah mereka kumpulkan. Persahabatan mereka diuji satu kali lagi, dan mereka harus memutuskan seberapa besar yang rela mereka korbankan demi kedamaian seluruh Klan."
+            "Komet Minor adalah pertanda kehancuran bagi dunia Klan. Raib, Seli, dan Ali kini menghadapi ujian terakhir dalam petualangan epik mereka. Dalam peperangan terbesar antar dunia, mereka harus menggunakan semua kekuatan, pengetahuan, dan keberanian yang telah mereka kumpulkan. Persahabatan mereka diuji satu kali lagi, dan mereka harus memutuskan seberapa besar yang rela mereka korbankan demi kedamaian seluruh Klan.",
+            "Ketika Lily mendapati dirinya terjebak dalam pernikahan palsu demi menyelamatkan bisnis keluarga, ia tidak menyangka bahwa pria yang harus ia nikahi adalah musuh masa kecilnya, Theo. Namun di balik kebencian lama, muncul percikan yang tidak bisa diabaikan. 'The Rose Bargain' adalah kisah tentang cinta yang tumbuh dari kebencian, kesepakatan yang membawa perubahan, dan perjuangan untuk saling memahami di tengah badai kesalahpahaman.",
+            "Saat ombak membawa puing kapal ke pesisir desa terpencil, Evie menemukan dirinya terlibat dalam misteri yang lebih dalam dari sekadar laut. Dalam 'A Dark and Drowning Tide', Evie menyadari bahwa darah bangsawan yang mengalir di tubuhnya membawa kutukan kuno yang membangkitkan makhluk-makhluk kelam dari laut. Untuk menyelamatkan desanya dan dirinya sendiri, Evie harus menghadapi masa lalu keluarganya dan rahasia yang telah terkubur dalam gelapnya air pasang.",
+            "Seorang putri muda yang tak pernah mengenal dunia luar, Alethea dilatih sejak kecil untuk menjadi alat pembunuh dalam istana. Namun, ketika ia mendapatkan kesempatan untuk merebut kebebasannya, Alethea merancang misi membunuh sang raja—ayahnya sendiri. 'How to Kill a King' adalah kisah penuh intrik istana, pengkhianatan, dan tekad seorang gadis yang memilih menjadi penguasa atas takdirnya sendiri.",
+            "Alice selalu merasa tidak cocok di dunianya—hingga suatu malam ia tersesat ke dunia aneh bernama Neverland, tempat mimpi dan mimpi buruk bercampur jadi satu. Dalam petualangannya, ia bertemu Peter Pan, pemimpin pemberontak yang mencoba menyelamatkan dunia itu dari kehancuran. 'Alice in Neverland' adalah perpaduan gelap dan ajaib dari dua dunia dongeng yang berubah jadi medan perang antara harapan dan ketakutan.",
+            "Ketika Peter Pan jatuh ke dalam portal ajaib yang menghubungkannya dengan Wonderland, ia harus bekerja sama dengan Alice untuk melawan Ratu Merah dan Kapten Hook yang kini bersatu demi menguasai kedua dunia. 'Peter Pan in Wonderland' adalah kisah petualangan epik yang mempertemukan dua legenda klasik dalam peperangan antara kekacauan dan keseimbangan, dengan twist tak terduga di setiap belokan cerita."
     };
-
-
-
 
     private static int[] heroesImages = {
             R.drawable.buku1,
@@ -39,7 +47,12 @@ public class HeroesData {
             R.drawable.buku5,
             R.drawable.buku6,
             R.drawable.buku7,
-            R.drawable.buku8
+            R.drawable.buku8,
+            R.drawable.buku9,
+            R.drawable.buku10,
+            R.drawable.buku11,
+            R.drawable.buku12,
+            R.drawable.buku13
     };
 
     static ArrayList<Hero> getListData() {

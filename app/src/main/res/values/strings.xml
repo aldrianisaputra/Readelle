@@ -3,4 +3,8 @@
     <string name="heroes_name">Nama Pahlawan</string>
     <string name="detail">Detail</string>
     <string name="book_cover">Book Cover</string>
+    <string name="favorite">Favorite</string>
+    <string name="share">Share</string>
+    <string name="read">Read</string>
+
 </resources>

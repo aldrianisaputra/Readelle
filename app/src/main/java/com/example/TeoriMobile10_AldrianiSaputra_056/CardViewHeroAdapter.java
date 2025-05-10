@@ -3,13 +3,16 @@ package com.example.TeoriMobile10_AldrianiSaputra_056;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.TeoriMobile10_AldrianiSaputra_056.R;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 import java.util.ArrayList;
 
@@ -23,17 +26,44 @@ public class CardViewHeroAdapter extends RecyclerView.Adapter<CardViewHeroAdapte
     @NonNull
     @Override
     public CardViewViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_card_hero, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_cardview_hero, parent, false);
         return new CardViewViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CardViewViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final CardViewViewHolder holder, int position) {
         Hero hero = listHero.get(position);
-        holder.imgPhoto.setImageResource(hero.getPhoto());
+
+        Glide.with(holder.itemView.getContext())
+                .load(hero.getPhoto())
+                .apply(new RequestOptions().override(350, 550))
+                .into(holder.imgPhoto);
+
         holder.tvName.setText(hero.getName());
         holder.tvDetail.setText(hero.getDetail());
+
+        holder.btnFavorite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(holder.itemView.getContext(), "Favorite " +
+                        listHero.get(holder.getAdapterPosition()).getName(), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        holder.btnShare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(holder.itemView.getContext(), "Share " +
+                        listHero.get(holder.getAdapterPosition()).getName(), Toast.LENGTH_SHORT).show();
+            }
+        });
+        holder.btnRead.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(holder.itemView.getContext(), "Read " +
+                        listHero.get(holder.getAdapterPosition()).getName(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
@@ -41,15 +71,20 @@ public class CardViewHeroAdapter extends RecyclerView.Adapter<CardViewHeroAdapte
         return listHero.size();
     }
 
-    public class CardViewViewHolder extends RecyclerView.ViewHolder {
+    class CardViewViewHolder extends RecyclerView.ViewHolder {
         ImageView imgPhoto;
         TextView tvName, tvDetail;
+        Button btnFavorite, btnShare, btnRead;
 
-        public CardViewViewHolder(View itemView) {
+        CardViewViewHolder(View itemView) {
             super(itemView);
             imgPhoto = itemView.findViewById(R.id.img_item_photo);
             tvName = itemView.findViewById(R.id.tv_item_name);
             tvDetail = itemView.findViewById(R.id.tv_item_detail);
+            btnFavorite = itemView.findViewById(R.id.btn_set_favorite);
+            btnShare = itemView.findViewById(R.id.btn_set_share);
+            btnRead = itemView.findViewById(R.id.btn_read);
+
         }
     }
 }
