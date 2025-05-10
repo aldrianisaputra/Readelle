@@ -1,0 +1,2 @@
+Readelle adalah aplikasi katalog yang menyajikan daftar  novel digital bergenre fantasy lengkap dengan gambar sampul, judul, sinopsis, nama penulis, tahun terbit, dan genre. Aplikasi ini dirancang untuk para pecinta novel fantasy agar bisa menjelajahi dan menyimpan buku favorit mereka dengan mudah.
+Setiap item buku ditampilkan bisa dalam bentuk list, grid, dan card yang dilengkapi tombol Favorite, Read, dan Share.
